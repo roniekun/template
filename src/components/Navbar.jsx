@@ -20,12 +20,12 @@ const Navbar = ({ showNavbar,
 
   useLayoutEffect(() => {
     const itemAnim = {
-      y: showNavbar ? 0 : 760,
+      x: showNavbar ? 0 : -160,
       // x: showNavbar ? 0 : isSmallScreen ? '0' : '-1000',
       duration: .8,
     };
     const containerAnim = {
-      y: showNavbar ? '0%' : '-100%',
+      x: showNavbar ? '0%' : '-100%',
       // x: showNavbar ? 0 : isSmallScreen ? '0%' : '200%',
       duration:.8,
     };
@@ -44,9 +44,8 @@ const Navbar = ({ showNavbar,
           <nav 
           ref={navbarContainerRef}
           style={{
-            height: '100vh',
-            width: '100vw', padding: '5%',
-            transform: 'translateY(-100%)',
+                height: '100vh',
+                width: '80vw', padding: '5%'
           }}
           className={`${styles.navbarContainer} ${isScroll ? 'bg-color' : ''}`}
           id={`component-${themeContext.theme}`}>
@@ -61,7 +60,9 @@ const Navbar = ({ showNavbar,
           NavbarLinksContainer={{flexDirection: 'column', display: 'flex', alignItems: 'flex-end', width: '100%'}}
           NavbarLinksWrapper={{ backgroundColor: 'transparent'}}
           NavbarLinksLink={{textTransform: 'uppercase',
-                            fontWeight: '900', fontSize: isSmallScreen ? '40px' : isMediumScreen ? '60px' : '80px'}}/>
+                            color: 'gray',
+                            fontWeight: '900', 
+                            fontSize: window.innerHeight > 500 ? '50px' : '25px'}}/>
         </div >
          <div ref={footerRef} 
          style={{ position: isSmallScreen ? 'absolute' : 'relative', 
@@ -75,8 +76,8 @@ const Navbar = ({ showNavbar,
                           marginBottom: isSmallScreen ?'20%' : '0',
                            }}>
             <h3 className={styles.navFooter} style={{textTransform: 'uppercase',
-                                              fontWeight: '700',
-                                             }}>Socials</h3>
+                                              fontWeight: '700'}}>
+                                              Socials</h3>
             <div style={{marginBlock: '10px'}}>
             <Socials
              navSocialLink={{
@@ -84,7 +85,7 @@ const Navbar = ({ showNavbar,
               justifyContent: 'center', 
               alignItems: 'center', 
               height: '20px',
-              fill: isSmallScreen  ? 'lightgray' :'gray',
+              fill: 'gray',
               margin: '7px',
               width: 'fit-content',
              }}

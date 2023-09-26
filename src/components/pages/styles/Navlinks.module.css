@@ -43,11 +43,6 @@
   line-height: 1em;
 }
 
- .navbarLink:hover{
-
-  color: lightgray;
-}
-
 
 @media (max-width: 600px) {
 

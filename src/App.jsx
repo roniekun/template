@@ -106,8 +106,8 @@ const App = () => {
               
               <div className={styles.appContainer} id={`component-${theme}`}>
                {/* {isLoading && <Preloader/> } */}
-              {isSmallScreen && <PageModal showNavbar={showNavbar}/>}
-              {isSmallScreen && 
+              {!isDesktop && <PageModal showNavbar={showNavbar}/>}
+              {!isDesktop && 
                 <Navbar
                   showNavbar={showNavbar}
                   isDesktop={isDesktop}
@@ -169,7 +169,8 @@ const App = () => {
                   isSmallScreen={isSmallScreen}
                   setShowNavbar={setShowNavbar}  
                   isDesktop={isDesktop}
-                  showNavbar={showNavbar} />} />
+                  showNavbar={showNavbar}
+                  isMediumScreen={isMediumScreen} />} />
 
          
 

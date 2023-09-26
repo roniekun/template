@@ -3,14 +3,15 @@ import styles from './styles/Contact.module.css'
 import Header from '../Header'
 import Footer from '../Footer'
 
-const Contact = ({isDesktop, setShowNavbar, isMediumScreen, isSmallScreen}) => {
+const Contact = ({isDesktop, setShowNavbar, isMediumScreen, isSmallScreen,showNavbar}) => {
   return (
     <div className={styles.container}>
-    <Header setColor={'black'}
-            isDesktop={isDesktop}
-            setShowNavbar={setShowNavbar}
-            isMediumScreen={isMediumScreen}
-            isSmallScreen={isSmallScreen}/>
+         <Header isDesktop={isDesktop}
+              isMediumScreen={isMediumScreen}
+              isSmallScreen={isSmallScreen}
+              setShowNavbar={setShowNavbar}
+              setColor={'black'}
+              showNavbar={showNavbar}/>
     <div className={styles.body}>
       <h1>this is contact</h1>
     </div>

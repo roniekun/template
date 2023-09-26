@@ -3,14 +3,15 @@ import styles from './styles/About.module.css'
 import Header from '../Header'
 import Footer from '../Footer'
 
-const About = ({isDesktop, setShowNavbar, isMediumScreen, isSmallScreen}) => {
+const About = ({isDesktop, setShowNavbar, isMediumScreen, isSmallScreen,showNavbar}) => {
   return (
     <div className={styles.container}>
-      <Header setColor={'black'}
-              setShowNavbar={setShowNavbar}
-              isDesktop={isDesktop}
+           <Header isDesktop={isDesktop}
               isMediumScreen={isMediumScreen}
-              isSmallScreen={isSmallScreen}/>
+              isSmallScreen={isSmallScreen}
+              setShowNavbar={setShowNavbar}
+              setColor={'black'}
+              showNavbar={showNavbar}/>
       <div className={styles.body}>
         <h1>this is About</h1>
       </div>
