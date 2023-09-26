@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  width: 100vw;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+.body{
+  display: flex;
+  padding:5%;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+  height: 500px;
+}
+
+.body > h1{
+  font-size: 100px;
+}

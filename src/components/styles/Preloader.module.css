@@ -1,0 +1,49 @@
+.preloaderContainer{
+    z-index: 99999;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-color:black;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 99999999;
+}
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: auto;
+    }
+.preloaderLogo{
+    opacity: 0;
+    color:whitesmoke;
+    align-self: center;
+    font-size: 100px;
+    padding: 1em;
+    font-family: sans-serif;
+    
+}
+
+.preloaderLogo span{
+    font-style: italic;
+}
+.cover{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    bottom: 0;
+    z-index: 1;
+    transform: translateY(100%);
+}
+@media (max-width: 600px){
+
+    .preloaderLogo{
+        font-size: 50px;
+    }
+}
