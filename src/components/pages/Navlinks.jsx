@@ -32,19 +32,22 @@ const NavbarLinks = ({
   const tl = gsap.timeline();
   useEffect(() => {
     if (showNavbar ) {
-      tl.from(containerRef.current,{delay: .5, opacity: 0});
+     
       navbarlinkRefs.forEach((navbarlinkRef, index) => {
-        tl.fromTo(
+        gsap.fromTo(
           navbarlinkRef.current, 
           { 
-            opacity: 0, },
+            opacity: 0
+          },
           {
             opacity: 1,
+            duration: .5,
             delay: index * .1,
-          }, "-=.5");
+          }
+          );
       });
     }
-6  }, [showNavbar, navbarlinkRefs]);
+  }, [showNavbar, navbarlinkRefs]);
 
   const handleLinkClick = () => {
     window.scrollTo({ top: 0 });

@@ -8,7 +8,9 @@
     align-items: center;
     z-index: 999;
     cursor: pointer;
+    position: relative;
 }
+
 .line{
     background-color: gray;
     height: 1px;

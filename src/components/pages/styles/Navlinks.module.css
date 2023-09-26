@@ -13,14 +13,6 @@
   z-index: -1;
 }
 
-.linksContainer::after {
-  content: '';
-  width: 80%;
-  opacity: 0.3;
-  position: absolute;
-  z-index: -1;
-}
-
 .linkWrapper {
   flex-direction: column;
   height: auto;

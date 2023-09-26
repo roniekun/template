@@ -14,7 +14,7 @@ function Header({showNavbar, setShowNavbar, isSmallScreen, isMediumScreen, isDes
               showNavbar={showNavbar}
               text={'yourName Photography'}
               headerLogo={{fontSize: '24px',
-                            fontWeight: '400',
+                            fontWeight: 'bold',
                             color: setColor}} />
             </div> 
             { isSmallScreen &&

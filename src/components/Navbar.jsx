@@ -26,7 +26,6 @@ const Navbar = ({ showNavbar,
     };
     const containerAnim = {
       x: showNavbar ? '0%' : '-100%',
-      // x: showNavbar ? 0 : isSmallScreen ? '0%' : '200%',
       duration:.8,
     };
   
@@ -43,10 +42,6 @@ const Navbar = ({ showNavbar,
         {(themeContext) => (
           <nav 
           ref={navbarContainerRef}
-          style={{
-                height: '100vh',
-                width: '80vw', padding: '5%'
-          }}
           className={`${styles.navbarContainer} ${isScroll ? 'bg-color' : ''}`}
           id={`component-${themeContext.theme}`}>
             
@@ -62,7 +57,7 @@ const Navbar = ({ showNavbar,
           NavbarLinksLink={{textTransform: 'uppercase',
                             color: 'gray',
                             fontWeight: '900', 
-                            fontSize: window.innerHeight > 500 ? '50px' : '25px'}}/>
+                            fontSize: window.innerHeight > 500 ? '40px' : '25px'}}/>
         </div >
          <div ref={footerRef} 
          style={{ position: isSmallScreen ? 'absolute' : 'relative', 

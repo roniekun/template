@@ -5,11 +5,16 @@
   margin-top: 0;
   justify-content: center;
   list-style: none;
+  padding-inline: 5%;
   position: fixed;
   z-index: 999;
   gap: 10%;
+  left: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: lightgrey;
+  height: 100vh;
+  width: 80vw;
+  bottom: 0;
 }
 
 .navbarWrapper{
@@ -32,22 +37,15 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(11, 15, 25, 0.1);
     border-radius: 3px;
-    padding-inline: 5%;
     position: fixed;
     inset: 0;
-    z-index: 999;
     overflow: hidden;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: center;
   }
 
     .navbarWrapper{
     justify-content: center;
     
   }
-
-
   .navbarContainer::before,
   .navbarContainer::after,
   .hide::after {

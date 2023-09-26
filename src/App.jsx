@@ -152,7 +152,8 @@ const App = () => {
                   isSmallScreen={isSmallScreen}  
                   showNavbar={showNavbar}
                   setShowNavbar={setShowNavbar}
-                  isDesktop={isDesktop} />} 
+                  isDesktop={isDesktop} 
+                  isMediumScreen={isMediumScreen}/>} 
                   />
 
                   <Route path='/contact'
