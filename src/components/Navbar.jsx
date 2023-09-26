@@ -20,7 +20,7 @@ const Navbar = ({ showNavbar,
 
   useLayoutEffect(() => {
     const itemAnim = {
-      x: showNavbar ? 0 : -160,
+      x: showNavbar ? "0%" : "-160%",
       // x: showNavbar ? 0 : isSmallScreen ? '0' : '-1000',
       duration: .8,
     };
