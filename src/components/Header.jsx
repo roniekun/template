@@ -12,9 +12,9 @@ function Header({showNavbar, setShowNavbar, isSmallScreen, isMediumScreen, isDes
             <div className={styles.logoWrapper}>
               <SiteLogo setShowNavbar={setShowNavbar}
               showNavbar={showNavbar}
-              text={'yourName Photography'}
+              text={'Your Website'}
               headerLogo={{fontSize: '24px',
-                            fontWeight: 'bold',
+                            fontWeight: '500',
                             color: setColor}} />
             </div> 
             { isSmallScreen &&
@@ -40,7 +40,7 @@ function Header({showNavbar, setShowNavbar, isSmallScreen, isMediumScreen, isDes
                setShowNavbar={setShowNavbar}
                headerNavbarWrapper={{ padding: '.3em', 
                                       borderRadius: '30px'}}
-               headerNavbarLink= {{textTransform: 'capitalize',
+               headerNavbarLink= {{textTransform: 'uppercase',
                fontSize: '16px', fontWeight: '400', color: setColor}}/>
              </div>}
           </div>

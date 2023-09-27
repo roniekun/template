@@ -23,7 +23,7 @@ const Footer = ({ setShowNavbar, isSmallScreen }) => {
           />
         </div>
         <h3>all right reserved</h3>
-        <h3>Copyright {currentYear}</h3>
+        <h3> &copy; {currentYear}</h3>
       </div>
     </div>
   );

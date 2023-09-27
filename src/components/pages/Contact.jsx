@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './styles/Contact.module.css'
 import Header from '../Header'
 import Footer from '../Footer'
+import Socials from '../../assets/icons/Socials'
 
 const Contact = ({isDesktop, setShowNavbar, isMediumScreen, isSmallScreen,showNavbar}) => {
   return (
@@ -13,7 +14,20 @@ const Contact = ({isDesktop, setShowNavbar, isMediumScreen, isSmallScreen,showNa
               setColor={'black'}
               showNavbar={showNavbar}/>
     <div className={styles.body}>
-      <h1>this is contact</h1>
+    <div className={styles.sectionOne}>
+    <div className={styles.title}><h3>Contact</h3></div>
+    <div className={styles.contacts}>
+    <p>Email: youremail@gmail.com</p>
+    <p>Phone: 90394543504</p>
+    <p>SocialMedia:</p> <Socials displayNames={true}/>
+    <address>
+     <h3 className={styles.title}>Address</h3>
+    <p>123 Main Street</p>
+        <p>City, State ZIP Code</p>
+        <p>Philippines</p>
+    </address>
+    </div>
+       </div>
     </div>
     <Footer/>
     </div>

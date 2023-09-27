@@ -42,7 +42,7 @@ const Navbar = ({ showNavbar,
         {(themeContext) => (
           <nav 
           ref={navbarContainerRef}
-          className={`${styles.navbarContainer} ${isScroll ? 'bg-color' : ''}`}
+          className={`${styles.navbarContainer}`}
           id={`component-${themeContext.theme}`}>
             
           <div ref={navItemsRef}
@@ -52,15 +52,16 @@ const Navbar = ({ showNavbar,
           setShowNavbar={setShowNavbar}
           isScroll={isScroll}
           isSmallScreen={isSmallScreen}
-          NavbarLinksContainer={{flexDirection: 'column', display: 'flex', alignItems: 'flex-end', width: '100%'}}
+          NavbarLinksContainer={{flexDirection: 'column', display: 'flex', 
+          alignItems: 'flex-end', width: '100%'}}
           NavbarLinksWrapper={{ backgroundColor: 'transparent'}}
-          NavbarLinksLink={{textTransform: 'uppercase',
+          NavbarLinksLink={{textTransform: 'capitalize',
                             color: 'gray',
-                            fontWeight: '900', 
-                            fontSize: window.innerHeight > 500 ? '40px' : '25px'}}/>
+                            fontWeight: '700', 
+                            fontSize: window.innerHeight > 500 ? '32px' : '24px'}}/>
         </div >
          <div ref={footerRef} 
-         style={{ position: isSmallScreen ? 'absolute' : 'relative', 
+         style={{ position: 'relative', 
                           display: 'flex',
                           justifyContent: 'center',
                           alignItems: 'center',

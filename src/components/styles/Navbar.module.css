@@ -1,13 +1,14 @@
 .navbarContainer {
   box-sizing: border-box;
   flex-direction: column;
+  padding-top: 100px;
   display: flex;
   margin-top: 0;
   justify-content: center;
   list-style: none;
-  padding-inline: 5%;
+  padding-inline: 10%;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   gap: 10%;
   left: 0;
   overflow: hidden;
@@ -15,6 +16,7 @@
   height: 100vh;
   width: 80vw;
   bottom: 0;
+  transform: translateX(-100%);
 }
 
 .navbarWrapper{

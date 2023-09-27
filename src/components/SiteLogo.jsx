@@ -22,7 +22,7 @@ const SiteLogo = ({
     onClick={handleClick}
     style={{textDecoration: 'none',...headerContainer}} 
     className={styles.container}>
-      <h1 style={{...navbarContainer,...headerLogo}} className={styles.logo}>{text}</h1>
+      <h1 style={{...navbarContainer,...headerLogo}} className={styles.logo}>{text}&trade;</h1>
     </NavLink> 
   )
 }

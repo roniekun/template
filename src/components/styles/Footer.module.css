@@ -4,11 +4,11 @@
   flex-direction: column;
   width: 100%;
   align-self: flex-end;
-  height: 200px;
+  height: auto;
   align-items: center; 
   position: relative;
   justify-content: flex-start;
-  padding: 2%;
+  padding: 5%;
   flex-wrap: nowrap;
   z-index: 1;
   background-color: lightgray;

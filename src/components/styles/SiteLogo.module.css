@@ -15,12 +15,8 @@
     padding: 1em;
     text-transform: capitalize;
     user-select: none;
-    font-family: 'Clash Display';
+    z-index: -9999999;
     }
-
-.logo span{
-     font-style: italic;
-}
 
 @media (max-width:600px){
 

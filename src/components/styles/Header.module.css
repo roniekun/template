@@ -9,10 +9,9 @@
   display: flex;
   background-color: transparent;
   height: 200px;
-  z-index: 99999;
   top: 0;
-  background-color: lightgray;
   padding-inline: 5%;
+  border: lightgray 1px solid;
 }
 
 .logoWrapper{

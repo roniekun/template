@@ -13,7 +13,16 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
               setColor={'black'}
               showNavbar={showNavbar}/>
       <div className={styles.body}>
-        <h1>this is home</h1>
+        <div className={styles.sectionOne}>
+        <h1 className={styles.title}>
+         <span>Some text here</span> <br /> (identity of your brand).
+        </h1>
+        <div className={styles.imgContainer}>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        </div>
+        </div>
       </div>
       <Footer/>
     </div>
