@@ -19,14 +19,7 @@
   align-self: center;
 }
 
-.menuWrapper{ 
-  position:relative;
-  z-index: 99;
-  right: 0;
-  top: 0;
-}
-
-@media (max-width: 600px){
+@media (max-width: 1024px){
 
  .container{
     height: 100px;

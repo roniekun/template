@@ -1,7 +1,6 @@
 import { ThemeContext } from '../context/ThemeContext';
 import styles from './styles/Header.module.css';
 import SiteLogo from './SiteLogo';
-import Menu from '../assets/buttons/Menu';
 import NavbarLinks from './pages/Navlinks';
 
 function Header({showNavbar, setShowNavbar, isSmallScreen, isMediumScreen, isDesktop, setColor}) {
@@ -17,23 +16,6 @@ function Header({showNavbar, setShowNavbar, isSmallScreen, isMediumScreen, isDes
                             fontWeight: '500',
                             color: setColor}} />
             </div> 
-            { isSmallScreen &&
-              <div className={styles.menuWrapper}>
-              <Menu showNavbar={showNavbar} 
-              setShowNavbar={setShowNavbar}
-              displayIcon={true}
-              setColor={setColor}
-              MenuContainer={{}}/>
-              </div>}
-              { isMediumScreen &&
-              <div className={styles.menuWrapper}>
-              <Menu showNavbar={showNavbar} 
-              setShowNavbar={setShowNavbar}
-              displayIcon={true}
-              setColor={setColor}
-              MenuContainer={{}}/>
-              </div>}
-
               {isDesktop &&
                <div className={styles.navLinksWrapper}>
                <NavbarLinks 

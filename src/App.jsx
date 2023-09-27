@@ -6,6 +6,7 @@ import Community from './components/pages/Community';
 import Contact from './components/pages/Contact';
 import { gsap } from 'gsap';
 import Home from './components/pages/Home';
+import Menu from './assets/buttons/Menu';
 import Navbar from './components/Navbar';
 import PageModal from './assets/Page-modal';
 import Pricing from './components/pages/Pricing';
@@ -106,6 +107,20 @@ const App = () => {
               
               <div className={styles.appContainer} id={`component-${theme}`}>
                {/* {isLoading && <Preloader/> } */}
+                 { isSmallScreen &&
+              <div className={styles.menuWrapper}>
+              <Menu showNavbar={showNavbar} 
+              setShowNavbar={setShowNavbar}
+              displayIcon={true}
+              MenuContainer={{}}/>
+              </div>}
+              { isMediumScreen &&
+              <div className={styles.menuWrapper}>
+              <Menu showNavbar={showNavbar} 
+              setShowNavbar={setShowNavbar}
+              displayIcon={true}
+              MenuContainer={{}}/>
+              </div>}
               {!isDesktop && <PageModal showNavbar={showNavbar}/>}
               {!isDesktop && 
                 <Navbar
