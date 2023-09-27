@@ -13,7 +13,8 @@ const About = ({isDesktop, setShowNavbar, isMediumScreen, isSmallScreen,showNavb
               setColor={'black'}
               showNavbar={showNavbar}/>
       <div className={styles.body}>
-        <h1>this is About</h1>
+        <h1>I&apos;m more than a photographer; I'm a visual storyteller. <br />
+            Bringing your events to life through the art of storytelling.</h1>
       </div>
       <Footer/>
     </div>
