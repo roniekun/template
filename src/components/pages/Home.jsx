@@ -18,9 +18,10 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
         <h1 className={styles.title}>
         Capturing <strong>MOMENTS </strong> <br />  that last a <br /><span> LIFETIME. </span> 
         </h1>
-        <button className={styles.btn}>Work with us</button>
+        <button className={styles.btn}>Let&apos;s Connect</button>
+        <br />
         <p>"Transforming your special moments into timeless memories."</p>
-       <p> "Your expert event photographer, dedicated to preserving your precious moments."</p>
+        <p> "Your expert event photographer, dedicated to preserving your precious moments."</p>
 
         <div className={styles.imgContainer}>
         <img src="" alt="" />
@@ -36,7 +37,31 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
         <div className={styles.card2}>
         <p>Our team consist of dedicated members</p>
         </div>
-        
+        </div>
+
+        <div className={styles.sectionThree}>
+
+        <div className={styles.circle} id={styles.circle1}>
+          <h2> 10 years of experience</h2>
+        </div>
+
+        <div className={styles.circle} id={styles.circle2}>
+        <h2> Thousands of shots</h2>
+        </div>
+
+        <div className={styles.circle} id={styles.circle3}>
+        <h2> More than 100+ satisfied clients</h2>
+        </div>
+        </div>
+
+        <div className={styles.sectionFour}>
+          <h1>Featured Events</h1>
+        </div>
+        <div className={styles.sectionFour}>
+          <h1>What our customer says?</h1>
+        </div>
+        <div className={styles.sectionFour}>
+          <h1>FAQ</h1>
         </div>
       </div>
       <Footer/>

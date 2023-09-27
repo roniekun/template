@@ -9,6 +9,8 @@ const Footer = ({ setShowNavbar, isSmallScreen }) => {
   return (
     <div className={styles.container}>
       <div className={styles.body}>
+        <h2>We are specialized in Storytelling Through Photography</h2>
+        <button className={styles.btn}>Book us</button>
         <h2>Connect to my social media</h2>
         <div className={styles.socialContainer}>
           <Socials
