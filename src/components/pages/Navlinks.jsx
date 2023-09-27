@@ -21,9 +21,9 @@ const NavbarLinks = ({
 
   const links = [
     { to: '/', text: 'home ' },
+    { to: '/about', text: 'about  ' },
     { to: '/portfolio', text: 'portfolio  ' },
     { to: '/pricing', text: 'pricing  ' },
-    { to: '/about', text: 'about  ' },
     { to: '/contact', text: 'contact  ' },
     
   ];

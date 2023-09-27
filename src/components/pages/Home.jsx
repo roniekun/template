@@ -17,6 +17,7 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
         <h1 className={styles.title}>
          <span>Some text here</span> <br /> (identity of your brand).
         </h1>
+        <button className={styles.btn}>Connect</button>
         <div className={styles.imgContainer}>
         <img src="" alt="" />
         <img src="" alt="" />

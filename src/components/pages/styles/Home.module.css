@@ -34,7 +34,6 @@
   text-align: center;
 
 }
-
 .title span{
 
   font-size: 80px;
@@ -44,3 +43,28 @@
   height: auto;
 }
 
+@media (max-width: 600px){
+  .container{
+    display: flex;
+}
+  .title{
+    font-size: 28px;
+}
+
+  .title span{
+    font-size: 40px;
+}
+
+  .btn{
+    padding: 1em;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+  .btn:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition: .3s;
+    }
+}
