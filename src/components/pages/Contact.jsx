@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles/Contact.module.css'
+import styles from './Contact.module.css'
 import ContactForm from '../../assets/contact-form/Contactform'
 import Header from '../Header'
 import Footer from '../Footer'

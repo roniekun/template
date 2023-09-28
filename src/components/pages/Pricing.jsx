@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles/Pricing.module.css'
+import styles from './Pricing.module.css'
 import Header from '../Header'
 import Footer from '../Footer'
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { NavLink, useLocation } from 'react-router-dom';
-import styles from './styles/Navlinks.module.css';
+import styles from './Navlinks.module.css';
 
 const NavbarLinks = ({
   headerNavbarLink,

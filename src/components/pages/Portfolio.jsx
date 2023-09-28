@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles/Portfolio.module.css'
+import styles from './Portfolio.module.css'
 import Header from '../Header'
 import Footer from '../Footer'
 const Portfolio = ({isDesktop,setShowNavbar, isMediumScreen, isSmallScreen,showNavbar}) => {

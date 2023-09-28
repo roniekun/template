@@ -1,12 +1,12 @@
 import React from 'react'
 import Footer from '../Footer'
-import './styles/Community.css'
+import styles from './Community.module.css'
 
 const Community = ({isSmallScreen, setShowNavbar}) => {
   return (
-    <div className='community_container'>
-    <div className='community_content'>
-      <h1 className='title'>
+    <div className={styles.container}>
+    <div className={styles.body}>
+      <h1 className={styles.title}>
         Blank Page
       </h1>
     </div>
