@@ -60,11 +60,10 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
           <h1>Featured Events</h1>
         </div>
         <div className={styles.sectionFour}>
-          <h1>What our customer says?</h1>
+          <h1>Reviews of our clients</h1>
         </div>
         <div className={styles.sectionFour}>
-          <h1>FAQ</h1>
-          <br />
+          <h1>Frequently Asked Questions: </h1> <p>(This is for Demo purpose only)</p>
           <br />
           <Faq/>
         </div>

@@ -29,7 +29,7 @@ const NavbarLinks = ({
   ];
   const containerRef = useRef(null);
   const navbarlinkRefs = links.map(() => useRef(null));
-  const tl = gsap.timeline();
+
   useEffect(() => {
     if (showNavbar ) {
      
