@@ -16,6 +16,14 @@
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    height: 500px;
+    height: auto;
+}
+.contactForm{
+    width: 100%;
+    padding:1em;
+}
+
+.sectionOne{
+    width: 100%;
 }
     

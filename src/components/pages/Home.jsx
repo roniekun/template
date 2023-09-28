@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../Footer'
 import Header from '../Header'
 import styles from './styles/Home.module.css'
+import Faq from '../../assets/faq/Faq'
 
 const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar}) => {
   return (
@@ -50,10 +51,6 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
           <h2> 10 years of experience</h2>
         </div>
 
-        <div className={styles.circle} id={styles.circle2}>
-        <h2> Thousands of shots</h2>
-        </div>
-
         <div className={styles.circle} id={styles.circle3}>
         <h2> More than 100+ satisfied clients</h2>
         </div>
@@ -67,6 +64,9 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
         </div>
         <div className={styles.sectionFour}>
           <h1>FAQ</h1>
+          <br />
+          <br />
+          <Faq/>
         </div>
       </div>
       <Footer/>

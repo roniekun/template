@@ -4,9 +4,8 @@ import 'firebase/compat/firestore';
 import './Contactform.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import MagneticEffect from '../MagneticEffect/MagneticEffect';
+import MagneticEffect from '../magnetic-effect/MagneticEffect';
 import ContactModal from './Contactmodal';
-
 
 const firebaseConfig = {
   apiKey: "AIzaSyC2yJ3-lNxbO6h6Ma5oPET6pKtDn67arME",

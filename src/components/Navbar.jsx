@@ -52,7 +52,7 @@ const Navbar = ({ showNavbar,
           isSmallScreen={isSmallScreen}
           NavbarLinksContainer={{flexDirection: 'column', display: 'flex', 
           alignItems: 'flex-end', width: '100%'}}
-          NavbarLinksWrapper={{ backgroundColor: 'transparent'}}
+          NavbarLinksWrapper={{ backgroundColor: 'transparent',paddingBlock: '.5em'}}
           NavbarLinksLink={{textTransform: 'capitalize',
                             color: 'gray',
                             fontWeight: '700', 

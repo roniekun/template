@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './styles/Contact.module.css'
+import ContactForm from '../../assets/contact-form/Contactform'
 import Header from '../Header'
 import Footer from '../Footer'
 import Socials from '../../assets/icons/Socials'
@@ -14,12 +15,20 @@ const Contact = ({isDesktop, setShowNavbar, isMediumScreen, isSmallScreen,showNa
               setColor={'black'}
               showNavbar={showNavbar}/>
     <div className={styles.body}>
+
+    <div className={styles.contactForm}>
+     <ContactForm/>
+    </div>
+
     <div className={styles.sectionOne}>
     <div className={styles.title}><h3>Contact</h3></div>
     <div className={styles.contacts}>
     <p>Email: youremail@gmail.com</p>
     <p>Phone: 90394543504</p>
-    <p>SocialMedia:</p> <Socials displayNames={true}/>
+    <p>Social media:</p>
+     
+     <Socials displayNames={true}/>
+
     <address>
      <h3 className={styles.title}>Address</h3>
     <p>123 Main Street</p>
