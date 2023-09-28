@@ -15,24 +15,10 @@ import Lenis from '@studio-freight/lenis'
 import Portfolio from './components/pages/Portfolio';
 
 const App = () => {
-  const [isScroll, setIsScroll] = useState();
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 600);
   const [isMediumScreen, setIsMediumScreen] = useState (window.innerWidth <= 1024 && window.innerWidth > 600)
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 1024);
   const [showNavbar, setShowNavbar] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-  const menuRef = useRef(null);
-
-  useEffect(() => {
-    const delay = 2900; // 2 seconds
-    const timeoutId = setTimeout(() => {
-      setIsLoading(false);
-    }, delay);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
 
   const lenis = new Lenis()
   //smooth scroll
@@ -58,7 +44,7 @@ const App = () => {
 
     const handleScroll = useCallback(() => {
 
-    }, [isScroll]);
+    }, []);
 
   useEffect(() => {
     const handleResizeEvent = () => {
@@ -67,7 +53,6 @@ const App = () => {
 
     const handleScrollEvent = () => {
       handleScroll();
-      // setIsScroll(window.scrollY > window.innerWidth/2);
     };
 
     window.addEventListener('resize', handleResizeEvent);
@@ -79,24 +64,6 @@ const App = () => {
     };
   }, [handleResize, handleScroll]);
 
-
-  useEffect(() => {
-
-    if (isScroll) {
-      gsap.to(menuRef.current, {
-        scale: 1,
-        opacity: 1,
-        duration: 0.5,
-      });
-    } else {
-      gsap.to(menuRef.current, {
-        scale: 0,
-        opacity: 0,
-        duration: 0.5,
-      });
-    }
-  }, [isScroll]);
-
   return (
     <ThemeProvider>
       <BrowserRouter>
@@ -105,7 +72,6 @@ const App = () => {
             return (
               
               <div className={styles.appContainer} id={`component-${theme}`}>
-               {/* {isLoading && <Preloader/> } */}
                  { isSmallScreen &&
               <div className={styles.menuWrapper}>
               <Menu showNavbar={showNavbar} 
@@ -128,7 +94,7 @@ const App = () => {
                   isMediumScreen={isMediumScreen}
                   isSmallScreen={isSmallScreen}
                   setShowNavbar={setShowNavbar}
-                  isScroll={isScroll}
+                  
                 />}
   
                 <Routes>
@@ -139,7 +105,7 @@ const App = () => {
                   isMediumScreen={isMediumScreen} 
                   showNavbar={showNavbar}
                   setShowNavbar={setShowNavbar}
-                  isScroll={isScroll} />}
+                   />}
                   />
                   
                   <Route path='/about' 
@@ -148,7 +114,7 @@ const App = () => {
                   showNavbar={showNavbar}
                   setShowNavbar={setShowNavbar}
                   isDesktop={isDesktop}
-                  isScroll={isScroll}
+                  
                   isMediumScreen={isMediumScreen} />}
                   />
 
@@ -173,7 +139,7 @@ const App = () => {
                   <Route path='/contact'
                    element={<Contact 
                    isDesktop={isDesktop}
-                   isScroll={isScroll}
+                   
                    isMediumScreen={isMediumScreen}
                    isSmallScreen={isSmallScreen}  
                    showNavbar={showNavbar}

@@ -1,7 +1,7 @@
 import styles from './styles/Navbar.module.css';
 import Socials from '../assets/icons/Socials';
 import { ThemeContext } from '../context/ThemeContext';
-import React, { useLayoutEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import NavbarLinks from './pages/Navlinks';
 import { gsap } from 'gsap';
 
@@ -16,8 +16,7 @@ const Navbar = ({ showNavbar,
   const footerRef = useRef(null);
   const logoRef = useRef(null);
   
-
-  useLayoutEffect(() => {
+  useEffect(() => {
     const itemAnim = {
       x: showNavbar ? "0%" : "-160%",
       // x: showNavbar ? 0 : isSmallScreen ? '0' : '-1000',
@@ -32,8 +31,7 @@ const Navbar = ({ showNavbar,
     gsap.to(navItemsRef.current,itemAnim);
     gsap.to(footerRef.current, itemAnim);
     gsap.to(logoRef.current, itemAnim);
-  }, [showNavbar, isSmallScreen]);
-  
+  }, [showNavbar,  isSmallScreen]);
 
   return (
     <>
@@ -51,7 +49,7 @@ const Navbar = ({ showNavbar,
           setShowNavbar={setShowNavbar}
           isSmallScreen={isSmallScreen}
           NavbarLinksContainer={{flexDirection: 'column', display: 'flex', 
-          alignItems: 'flex-end', width: '100%'}}
+          alignItems: 'center', width: '100%'}}
           NavbarLinksWrapper={{ backgroundColor: 'transparent',paddingBlock: '.5em'}}
           NavbarLinksLink={{textTransform: 'capitalize',
                             color: 'gray',
