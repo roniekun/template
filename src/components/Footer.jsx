@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles/Footer.module.css';
 import Socials from '../assets/icons/Socials';
+import Gmail from '../assets/buttons/Gmail';
 
 const Footer = ({ setShowNavbar, isSmallScreen }) => {
   const date = new Date();
@@ -10,7 +11,7 @@ const Footer = ({ setShowNavbar, isSmallScreen }) => {
     <div className={styles.container}>
       <div className={styles.body}>
         <h2>Book us today for 10% discount</h2>
-        <button className={styles.btn}>Contact</button>
+        <Gmail customText={'book now'}/>
         <h2>Connect to my social media</h2>
         <div className={styles.socialContainer}>
           <Socials

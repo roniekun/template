@@ -3,8 +3,20 @@ import Footer from '../Footer'
 import Header from '../Header'
 import styles from './styles/Home.module.css'
 import Faq from '../../assets/faq/Faq'
+import Gmail from '../../assets/buttons/Gmail'
 
 const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar}) => {
+
+// EMAIL CONFIG   // EMAIL CONFIG   // EMAIL CONFIG   // EMAIL CONFIG   // EMAIL CONFIG
+
+  const email = 'roniebenitez01@gmail.com';
+  const subject = 'Project Request';
+
+  const handleClick = () => {
+    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = mailtoUrl;
+  };
+
   return (
     <div className={styles.container}>
       <Header isDesktop={isDesktop}
@@ -19,7 +31,7 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
         <h1 className={styles.title}>
         Capturing <strong>MOMENTS </strong> <br />  that last a <br /><span> LIFETIME. </span> 
         </h1>
-        <button className={styles.btn}>Let&apos;s Connect</button>
+        <Gmail customText={"Let's Connect"}/>
         <br />
         <p>"Transforming your special moments into timeless memories."</p>
         <p> "Your expert event photographer, dedicated to preserving your precious moments."</p>
@@ -58,11 +70,14 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
 
         <div className={styles.sectionFour}>
           <h1>Featured Events</h1>
+          <Faq/>
         </div>
-        <div className={styles.sectionFour}>
-          <h1>Reviews of our clients</h1>
+
+        <div className={styles.sectionFive}>
+          <Faq/>
         </div>
-        <div className={styles.sectionFour}>
+
+        <div className={styles.sectionSix}>
           <h1>Frequently Asked Questions: </h1> <p>(This is for Demo purpose only)</p>
           <br />
           <Faq/>

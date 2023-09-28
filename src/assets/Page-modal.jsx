@@ -1,4 +1,3 @@
-import { delay } from 'framer-motion';
 import React, { useState, useEffect } from 'react';
 
 const PageModal = ({ showNavbar }) => {
@@ -19,14 +18,13 @@ const PageModal = ({ showNavbar }) => {
   return isVisible ? (
     <div
       style={{
-        position:'fixed',
-        top: '0',
-        width: '100vw',
-        height: '100vh',
-        position:'fixed',
-        zIndex: '7',
-        backgroundColor: 'rgba( 0 , 0 , 0 , 0.3)',
-      }}
+      position: 'fixed',
+      top: '0',
+      width: '100vw',
+      height: '100vh',
+      zIndex: '9999',
+      backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    }}
     ></div>
   ) : null;
 };

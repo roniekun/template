@@ -1,0 +1,16 @@
+.btn{
+    padding-block: 1em;
+    padding-inline: 1em;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 30px;
+    text-transform: uppercase;
+    border: black 1px solid;
+  }
+  
+  .btn:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition: .3s;
+    }
