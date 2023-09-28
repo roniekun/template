@@ -3,10 +3,9 @@
     padding-inline: 1em;
     cursor: pointer;
     font-size: 18px;
-    background-color: transparent;
     border-radius: 10px;
     text-transform: uppercase;
-    border: black 1px solid;
+    border: gray 1px solid;
   }
   
   .btn:hover{

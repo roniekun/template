@@ -169,3 +169,15 @@
 .sectionSix > h1{
   text-align: center;
 }
+
+.sectionSeven{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  min-height: 400px;
+}
+
+.sectionSeven > h1{
+  text-align: center;
+}

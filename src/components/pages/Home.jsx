@@ -82,6 +82,9 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
           <br />
           <Faq/>
         </div>
+        <div className={styles.sectionSeven}>
+         <h1>Thank you for your support :)</h1>
+        </div>
       </div>
       <Footer/>
     </div>

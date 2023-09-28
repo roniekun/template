@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Gmail.module.css'
 
-const Gmail = ({customText}) => {
+const Gmail = ({customText, footerStyle}) => {
 
     // EMAIL CONFIG   // EMAIL CONFIG   // EMAIL CONFIG   // EMAIL CONFIG   // EMAIL CONFIG
 
@@ -13,7 +13,10 @@ const Gmail = ({customText}) => {
     window.location.href = mailtoUrl;
   };
   return (
-    <div className={styles.container}><button className={styles.btn} onClick={handleClick}>{customText}</button></div>
+    <div className={styles.container}>
+      <button style={footerStyle} className={styles.btn} onClick={handleClick}>{customText}
+      </button>
+  </div>
   )
 }
 

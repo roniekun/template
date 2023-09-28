@@ -5,29 +5,50 @@ import { ReactComponent as InstagramIcon } from './svg/instagram.svg';
 import { ReactComponent as GithubIcon } from './svg/github.svg';
 import { ReactComponent as LinkedinIcon } from './svg/linkedin.svg';
 import { ThemeContext } from '../../context/ThemeContext';
+
 const Socials = ({ 
-                      displayNames, 
-                      displayHandles, 
-                      displayIcons, 
-                      navSocialLink,
-                      contactContainer,
-                      contactSocialLink,
-                      contactIconContainer,
-                      footerIconContainer,
-                      footerContainer,
-                      footerSocialLink,
-                      headerIconContainer,
-                      headerSocialLink,
-
-                }) => {
-
-  const [hoveredLink, setHoveredLink] = useState(null); 
+      displayNames, 
+      displayHandles, 
+      displayIcons, 
+      navSocialLink,
+      contactContainer,
+      contactSocialLink,
+      contactIconContainer,
+      footerIconContainer,
+      footerContainer,
+      footerSocialLink,
+      headerIconContainer,
+      headerSocialLink,
+}) => {
 
   const socialMediaLinks = [
-    { name: 'Github', fill: '#E4405F', icon: <GithubIcon />, url: 'https://www.github.com/roniekun', userhandle: '' },
-    { name: 'Facebook', fill: '#1877F2', icon: <FacebookIcon />, url: 'https://www.facebook.com/ronieuxjpg', userhandle: '' },
-    { name: 'Instagram', fill: '#E4405F', icon: <InstagramIcon />, url: 'https://www.instagram.com/ronieuxjpg', userhandle: '' },
-    { name: 'LinkedIn', fill: '#E4405F', icon: <LinkedinIcon />, url: 'https://www.linkedin.com/in/roniebenitez', userhandle: '' },
+
+    { name: 'Github', 
+      fill: '#E4405F', 
+      icon: <GithubIcon />, 
+      url: 'https://www.github.com/roniekun',
+      userhandle: '' 
+    },
+
+    { name: 'Facebook',
+      fill: '#1877F2', 
+      icon: <FacebookIcon />, 
+      url: 'https://www.facebook.com/ronieuxjpg', 
+      userhandle: '' 
+    },
+
+    { name: 'Instagram', 
+      fill: '#E4405F',
+      icon: <InstagramIcon />, 
+      url: 'https://www.instagram.com/ronieuxjpg', 
+      userhandle: ''
+     },
+
+    { name: 'LinkedIn', 
+      fill: '#E4405F', 
+      icon: <LinkedinIcon />,
+      url: 'https://www.linkedin.com/in/roniebenitez', 
+      userhandle: '' },
   ];
 
   return (
@@ -54,8 +75,8 @@ const Socials = ({
                   className={styles.socialLink}
                   rel="noopener noreferrer">
                    {displayNames &&link.name}
-                  {displayIcons && link.icon}
-                  {displayHandles && link.userhandle}
+                   {displayIcons && link.icon}
+                   {displayHandles && link.userhandle}
                 </a>
             </div>
           ))}
