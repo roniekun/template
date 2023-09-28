@@ -1,10 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
-import './Contactform.css';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import MagneticEffect from '../magnetic-effect/MagneticEffect';
+import  styles from'./Contactform.module.css';
+// import { gsap } from 'gsap';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ContactModal from './Contactmodal';
 
 const firebaseConfig = {
@@ -22,25 +21,25 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 const ContactForm = ({isSmallScreen}) => {
-  const formBtnRef =useRef(null);
-  const formRef =useRef(null);
+  // const formBtnRef =useRef(null);
+  // const formRef =useRef(null);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
 
-    const form = formRef.current;
-    const btn = formBtnRef.current;
+  //   const form = formRef.current;
+  //   const btn = formBtnRef.current;
   
-    gsap.to(btn, {
-      x:  100, duration: 1,
-      scrollTrigger: {
-        trigger: form,
-        start: 'top top', // Adjust as needed
-        end: 'center top', // Adjust as needed
-      },
-    },
-    );
-  }, []);
+  //   gsap.to(btn, {
+  //     x:  100, duration: 1,
+  //     scrollTrigger: {
+  //       trigger: form,
+  //       start: 'top top', // Adjust as needed
+  //       end: 'center top', // Adjust as needed
+  //     },
+  //   },
+  //   );
+  // }, []);
  
   const initialFormData = {
     firstname: '',
@@ -102,16 +101,16 @@ const ContactForm = ({isSmallScreen}) => {
 
   return (
     
-      <form ref={formRef} className='form' onSubmit={handleSubmit}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         
             <label htmlFor="firstname"
-            className='form_firstname'>
+            className={styles.firstname}>
              What is your name?
             <br/>
             </label>
 
             <input
-              className='text_input'
+              className={styles.textInput}
               type="text"
               placeholder='ex. Ronie Benitez'
               id="firstname"
@@ -121,13 +120,13 @@ const ContactForm = ({isSmallScreen}) => {
               required/>
 
           <label htmlFor="email"  
-            className='form_email'>
+            className={styles.email}>
               What is your email?
               <br/> 
               </label>
 
             <input
-              className='email_input'
+              className={styles.emailInput}
               type="email"
               id="email"
               name="email"
@@ -138,13 +137,13 @@ const ContactForm = ({isSmallScreen}) => {
             />
 
           <label htmlFor="message" 
-            className='form_message'> 
+            className={styles.message}> 
             Type your message
             <br/> 
             </label>
 
           <textarea
-            className='text_area'
+            className={styles.textArea}
             id="message"
             placeholder='Hi, Good day,'
             name="message"
@@ -153,17 +152,13 @@ const ContactForm = ({isSmallScreen}) => {
             onChange={handleChange}
             required
           />
-        <div ref={formBtnRef}>
-        <MagneticEffect>
-        <div>
+      
         <button 
-        className={`form_submit_button ${isSubmitting ? 'loading' : ''}`} 
+        className={` ${styles.submit} ${isSubmitting ? styles.loading : ''}`}
         type="submit">
         {isSubmitting? 'Sending' : 'Send it!' }</button>
-        </div>
-        </MagneticEffect>
-        </div>
-           {showModal && (
+        
+        {showModal && (
         <ContactModal
           isSuccess={isSuccess}
           message={modalMessage}

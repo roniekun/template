@@ -23,7 +23,7 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
         <br />
         <p>"Transforming your special moments into timeless memories."</p>
         <p> "Your expert event photographer, dedicated to preserving your precious moments."</p>
-
+        <div className={styles.scroll}><p >Scroll</p></div>
         <div className={styles.imgContainer}>
         <img src="" alt="" />
         <img src="" alt="" />

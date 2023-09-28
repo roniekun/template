@@ -4,52 +4,50 @@
     align-items: flex-start;
     flex-direction: column;
     padding: 1em;
-    width: 100%;
+    width: 50%;
+    gap:20px;
     height: auto;
 }
-.form_firstname, .form_email, .form_message{
+.firstname, .email, .message{
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 1em;
     font-weight: 500;
 
 }
-.form_submit_button{
+.submit{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    width: fit-content;
-    height: fit-content;
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: transparent;
     border-radius: 30px;
-    color: white;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
-    padding-inline: 2em;
-    aspect-ratio: 3/1.5;
-    /* align-self: center; */
-    margin: 1.5em;
+    padding-inline: 1.5em;
+    padding-block: 1.5em;
     border: 1px solid rgba(128, 128, 128, .7);
+    align-self: center;
 }
 
-.form_submit_button:hover{
+.submit:hover{
     background: black;;
+    color:white;
+    transition: .5s;
 
 }
-.text_input, .email_input, .text_area{
+.textInput, .emailInput, .textArea{
     border: none;
     background-color: transparent;
     height: 50px;
     font-size: 16px;
-    width: 50%;
+    width: 100%;
     border-bottom: 1px solid gray;
     margin-bottom: 1em;
     color: gray;
     font-family: 'Manrope', sans-serif;
 }
-.text_input:focus, .email_input:focus, .text_area:focus{
+.textInput:focus, .emailInput:focus, .textArea:focus{
     outline: none;
 }
 
@@ -57,15 +55,16 @@
 
     .form{
         padding: 0;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
     }
-    .form_submit_button{
+    .submit{
         padding: 2em;
     }
-    .text_input, .email_input, .text_area{
+    .textInput, .emailInput, .textArea{
         width: 100%;
     }
 

@@ -4,7 +4,7 @@
   padding-top: 100px;
   display: flex;
   margin-top: 0;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
   padding-inline: 10%;
   position: fixed;
