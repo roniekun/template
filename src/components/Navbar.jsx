@@ -9,7 +9,6 @@ const Navbar = ({ showNavbar,
                 isSmallScreen, 
                 isMediumScreen, 
                 setShowNavbar,  
-                isScroll, 
                 isDesktop }) => {
 
   const navbarContainerRef = useRef(null);
@@ -50,7 +49,6 @@ const Navbar = ({ showNavbar,
           <NavbarLinks 
           showNavbar={showNavbar}
           setShowNavbar={setShowNavbar}
-          isScroll={isScroll}
           isSmallScreen={isSmallScreen}
           NavbarLinksContainer={{flexDirection: 'column', display: 'flex', 
           alignItems: 'flex-end', width: '100%'}}

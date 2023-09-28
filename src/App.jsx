@@ -10,7 +10,6 @@ import Menu from './assets/buttons/Menu';
 import Navbar from './components/Navbar';
 import PageModal from './assets/Page-modal';
 import Pricing from './components/pages/Pricing';
-import Policy from './components/pages/Policy';
 import { ThemeProvider, ThemeContext } from './context/ThemeContext';
 import Lenis from '@studio-freight/lenis'
 import Portfolio from './components/pages/Portfolio';
@@ -68,7 +67,7 @@ const App = () => {
 
     const handleScrollEvent = () => {
       handleScroll();
-      setIsScroll(window.scrollY > window.innerWidth/2);
+      // setIsScroll(window.scrollY > window.innerWidth/2);
     };
 
     window.addEventListener('resize', handleResizeEvent);

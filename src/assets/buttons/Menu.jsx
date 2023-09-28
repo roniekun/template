@@ -1,33 +1,47 @@
 import {useRef, useEffect} from 'react';
 import styles from './Menu.module.css';
-import { ThemeContext } from '../../context/ThemeContext';
 import { gsap } from 'gsap';
 
 const Menu = ({ showNavbar, setShowNavbar }) => {
-  const oneRef = useRef(null);
-  const twoRef = useRef(null);
-  const threeRef = useRef(null);
+  const containerRef = useRef(null)
+  const oneRef = useRef(null)
+  const twoRef = useRef(null)
+  const threeRef = useRef(null)
 
   useEffect(() => {
-    if (showNavbar){
+    if (showNavbar) {
       gsap.to(oneRef.current, {
-        rotate:-45, y: 9});
+        width: "100%",
+        xPercent: 0 // Reset to left-most position
+      });
       gsap.to(twoRef.current, {
-        opacity: 0 });
+        width: "100%",
+        xPercent: 0 // Reset to left-most position
+      });
       gsap.to(threeRef.current, {
-        rotate:45, y: -9 });
+        width: '100%',
+        xPercent: 0 // Reset to left-most position
+      });
+    } else {
+      // Calculate the right-most position based on the container's width
+      const containerWidth = containerRef.current.offsetWidth; // Assuming you have a container reference
+  
+      gsap.to(oneRef.current, {
+        width: '100%',
+        xPercent: 0 // Reset to left-most position
+      });
+      gsap.to(twoRef.current, {
+        width: `${(70 / 100) * containerWidth}px`,
+        xPercent: 0 // Move to the right-most position
+      });
+      gsap.to(threeRef.current, {
+        width: `${(40 / 100) * containerWidth}px`,
+        xPercent: 0 // Move to the right-most position
+      });
     }
-  else{
-     gsap.to(oneRef.current, {
-        rotate:0, y: '0%'});
-      gsap.to(twoRef.current, {
-        opacity: 1 });
-      gsap.to(threeRef.current, {
-        rotate:0, y: '0%' });
-    
-  }
-
-  }, [showNavbar])
+  }, [showNavbar]);
+  
+  
   
 
   const handleClick = () => {
@@ -36,15 +50,12 @@ const Menu = ({ showNavbar, setShowNavbar }) => {
   };
 
   return (
-    <ThemeContext.Consumer>
-      {theme => (
-        <div className={styles.container} onClick={handleClick}>
+    
+        <div ref={containerRef} className={styles.container} onClick={handleClick}>
           <div ref={oneRef} className={styles.line}></div>
           <div ref={twoRef} className={styles.line}></div>
           <div ref={threeRef} className={styles.line}></div>
         </div>
-      )}
-    </ThemeContext.Consumer>
   );
 };
 

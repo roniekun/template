@@ -33,6 +33,7 @@
   margin-right: 5%;
   right: 0;
   top: 0;
+  mix-blend-mode: difference;
 }
 
 .floatingMenuWrapper{

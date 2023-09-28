@@ -31,6 +31,11 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
         </div>
 
         <div className={styles.sectionTwo}>
+
+        <div><h1>we craft unique and memorable experience through capturing raw 
+          emotions that brings picturisque storytelling.</h1>
+        </div>
+
         <div className={styles.card1}>
         <p>We cover all types of events and different sizes</p>
         </div>
