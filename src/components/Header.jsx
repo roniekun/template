@@ -23,7 +23,7 @@ function Header({showNavbar, setShowNavbar, isSmallScreen, isMediumScreen, isDes
                headerNavbarWrapper={{ padding: '.3em', 
                                       borderRadius: '30px'}}
                headerNavbarLink= {{textTransform: 'uppercase',
-               fontSize: '16px', fontWeight: '400', color: setColor}}/>
+               fontSize: '16px', color: setColor}}/>
              </div>}
           </div>
         )

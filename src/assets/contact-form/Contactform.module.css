@@ -1,10 +1,11 @@
 .form{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     padding: 1em;
-    width: 50%;
+    width: 100%;
     gap:20px;
     height: auto;
 }
@@ -23,11 +24,15 @@
     border-radius: 50px;
     cursor: pointer;
     font-size: 14px;
+    justify-content: center;
     text-transform: uppercase;
-    padding-inline: 1.5em;
+    width: 100%;
     padding-block: 1.5em;
     border: 1px solid rgba(128, 128, 128, .7);
     align-self: center;
+    position: relative;
+    margin-top: 60px;
+
 }
 
 .submit:hover{
@@ -63,6 +68,7 @@
     }
     .submit{
         padding: 2em;
+        align-self: flex-end;
     }
     .textInput, .emailInput, .textArea{
         width: 100%;

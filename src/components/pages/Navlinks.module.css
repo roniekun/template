@@ -35,6 +35,10 @@
   line-height: 1em;
 }
 
+.navbarLink:hover{
+  font-weight: 500;
+}
+
 
 @media (max-width: 600px) {
 

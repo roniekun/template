@@ -20,45 +20,83 @@
     gap:100px;
 
 }
-.contactForm{
-    width: 100%;
+
+.heading{
+    font-size: 50px;
+    align-self: flex-start;
+    padding-inline: 1.5em;
+}
+
+.formContainer{
+    width: 60%;
     padding:1em;
 }
 
 .sectionOne{
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     gap: 20px;
+    justify-content: space-around;
     width: 100%;
     min-height: 400px;
     height: auto;
 }
 
+.contactLists{
+    display: flex;
+    width:20%;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    padding-inline: 5%;
+    border: lightgray 1px solid;
+    border-radius: 7px;
+}   
+
 .title{
     text-transform: uppercase;
-    align-self: flex-start;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
 }
-
-.addressContainer{
-    font-style: normal;
-
-}
-.contacts{
+.contactContainer{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    align-self: flex-end;
-    justify-content: center;
-    align-items: flex-start;
-    transform: translateX(-20%);
-
 }
-.contacts span{
+.contactContainer > p{
     line-height: 1.5em;
-    font-weight: 600;
-    transform: translateX(-10%);
+}
 
+.addressContainer > p{
+    line-height: 1.5em;
+}
+
+@media(max-width:1024px){
+    .body{
+        gap:50px;
+    }
+    .sectionOne{
+        flex-direction: column-reverse;
+        padding-inline: 0;
+        gap:100px;
+    }
+
+    .heading{
+        padding-inline: 0;
+        font-size: 32px;
+    }
+
+    .formContainer{
+        width: 100%;
+        padding: 0;
+        padding-block: 10%;
+        border-top: gray solid 1px ;
+    }
+
+    .contactLists{
+        width: 100%;
+        padding-block: 5%;
+    }
 
 }

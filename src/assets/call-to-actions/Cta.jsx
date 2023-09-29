@@ -3,7 +3,6 @@ import Gmail from '../buttons/Gmail'
 import styles from './Cta.module.css'
 
 const Cta = () => {
-
     const openSMSApp = () => {
         const phoneNumber = '09453924586'; // Replace with the desired phone number
         const smsLink = `sms:${phoneNumber}`;
