@@ -20,14 +20,17 @@ const About = ({isDesktop, setShowNavbar, isMediumScreen, isSmallScreen,showNavb
            <h4> Bringing your events to life through the art of storytelling.</h4>
          
            <div className={styles.imageContainer}>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Illo fugiat perspiciatis magni nulla, numquam enim velit cumque aliquam maiores vero excepturi, 
              delectus obcaecati ducimus magnam pariatur, modi non quas ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam maxime quisquam natus. Quos iure distinctio veniam, 
              excepturi placeat natus deleniti quas a ratione enim, sunt aspernatur dicta quam praesentium tempore?
              </p>
+
             <img className={styles.image}src="" alt="" />
            </div>
         </div>
+        
         <div className={styles.sectionTwo}>
           <h1>Skills</h1>
         </div >

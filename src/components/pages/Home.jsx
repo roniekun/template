@@ -30,8 +30,8 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
         <h1 className={styles.title}>
         Capturing <strong>MOMENTS </strong> <br />  that last a <br /><span> LIFETIME. </span> 
         </h1>
-        <p>"Transforming your special moments into timeless memories."</p>
-        <p> "Your expert event photographer, dedicated to preserving your precious moments."</p>
+        <p>Transforming your special moments into timeless memories.</p>
+        <p> Your expert event photographer, dedicated to preserving your precious moments.</p>
         <div className={styles.scroll}><p >Scroll</p></div>
         <div className={styles.imgContainer}>
         <img src="" alt="" />
@@ -67,11 +67,9 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
 
         <div className={styles.sectionFour}>
           <h1>Featured Events</h1>
-          <Faq/>
         </div>
 
         <div className={styles.sectionFive}>
-          <Faq/>
         </div>
 
         <div className={styles.sectionSix}>
@@ -83,7 +81,7 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
          <h1>Thank you for your support :)</h1>
         </div>
       </div>
-      <Cta/>
+      <Cta isSmallScreen={isSmallScreen}/>
       <Footer/>
     </div>
   )

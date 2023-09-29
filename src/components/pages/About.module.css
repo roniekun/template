@@ -45,6 +45,7 @@
   display: flex;
   width: 100%;
   min-height: 600px;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
@@ -63,12 +64,21 @@
 }
 
 @media (max-width: 1024px) {
+  .sectionOne{
+    gap:20px;
+  }
+
   .sectionOne > h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .sectionOne > h4 {
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .imageContainer{
+    flex-direction: column-reverse;
   }
 
   .imageContainer {
@@ -91,7 +101,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 32px;
   font-weight: 450;
   border:  gray 1px solid;
 }
@@ -102,7 +112,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 32px;
   font-weight: 450;
   border:  gray 1px solid;
 

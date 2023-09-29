@@ -101,6 +101,11 @@
     .btnContainer{
         align-items: center;
         flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn{
+        width: 100%;
     }
     
   }
