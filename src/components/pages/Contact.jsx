@@ -21,20 +21,26 @@ const Contact = ({isDesktop, setShowNavbar, isMediumScreen, isSmallScreen,showNa
     </div>
 
     <div className={styles.sectionOne}>
-    <div className={styles.title}><h3>Contact</h3></div>
-    <div className={styles.contacts}>
-    <p>Email: youremail@gmail.com</p>
-    <p>Phone: 90394543504</p>
-    <p>Social media:</p>
-     
-     <Socials displayNames={true}/>
 
-    <address>
-     <h3 className={styles.title}>Address</h3>
-    <p>123 Main Street</p>
+    <div className={styles.title}> <h5>Contact Details</h5></div>
+    
+    <div className={styles.contacts}>
+    <p> <span>Email:</span> youremail@gmail.com</p>
+    <p><span>Phone Number:</span> 90394543504</p>
+    <p><span>Digital Spaces:</span></p>
+     
+     <Socials 
+     contactContainer={{flexDirection:'column', alignItems: 'flex-start'}}
+     contactSocialLink={{fontSize: '14px', color: 'black',lineHeight: '1.5em'}}
+     displayNames={true}/>
+
+    <div className={styles.addressContainer}>
+     <p><span>Address</span></p>
+        <p>123 Main Street</p>
         <p>City, State ZIP Code</p>
         <p>Philippines</p>
-    </address>
+    </div>
+ 
     </div>
        </div>
     </div>

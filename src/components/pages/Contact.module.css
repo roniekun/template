@@ -17,6 +17,8 @@
     flex-direction: column;
     align-items: center;
     height: auto;
+    gap:100px;
+
 }
 .contactForm{
     width: 100%;
@@ -24,6 +26,39 @@
 }
 
 .sectionOne{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
+    min-height: 400px;
+    height: auto;
 }
-    
+
+.title{
+    text-transform: uppercase;
+    align-self: flex-start;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.addressContainer{
+    font-style: normal;
+
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(-20%);
+
+}
+.contacts span{
+    line-height: 1.5em;
+    font-weight: 600;
+    transform: translateX(-10%);
+
+
+}
