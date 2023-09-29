@@ -80,10 +80,8 @@ const Navbar = ({ showNavbar,
               fill: 'gray',
               margin: '7px',
               width: 'fit-content',
-              textTransform:'uppercase'
              }}
-              displayIcons={isSmallScreen ? true : false}
-              displayNames={isSmallScreen ? false : true}
+              displayIcons={true}
               showNavbar={showNavbar}/>
             </div>
            

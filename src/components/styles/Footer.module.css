@@ -67,7 +67,6 @@
 
   .body{
     align-items: flex-start;
-    padding-block: 10%;
     flex-direction: column;
   }
 
@@ -92,7 +91,8 @@
   .socialContainer::after{
     content: '';
     height: 1px;
-    width: 90%;
+    width: 95%;
+    align-self: center;
     position: absolute;
     background-color: gray;
     bottom: 0;
