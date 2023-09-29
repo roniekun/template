@@ -15,7 +15,7 @@ const Footer = ({ setShowNavbar, isSmallScreen }) => {
           <h5>socials</h5>
           <Socials
             displayNames={ true }
-            footerContainer={{ gap: '24px',flexWrap: 'wrap', justifyContent: 'flex-start'}}
+            footerContainer={{ gap: '24px',justifyContent: 'flex-start'}}
             footerSocialLink={{
               fill: 'lightgray',
               fontSize: '14px',
