@@ -44,11 +44,13 @@
 
 .contactLists{
     display: flex;
-    width:20%;
+    width:auto;
+    max-width: 400px;
     flex-direction: column;
-    gap: 50px;
-    justify-content: center;
-    padding-inline: 5%;
+    gap: 20px;
+    justify-content: flex-start;
+    padding:5% 3%;
+    height: fit-content;
     border: lightgray 1px solid;
     border-radius: 7px;
 }   
@@ -72,7 +74,7 @@
     line-height: 1.5em;
 }
 
-@media(max-width:1024px){
+@media(max-width:600px){
     .body{
         gap:50px;
     }
