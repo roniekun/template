@@ -3,8 +3,7 @@ import Footer from '../Footer'
 import Header from '../Header'
 import styles from './Home.module.css'
 import Faq from '../../assets/faq/Faq'
-import Gmail from '../../assets/buttons/Gmail'
-
+import Cta from '../../assets/call-to-actions/Cta'
 const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar}) => {
 
 // EMAIL CONFIG   // EMAIL CONFIG   // EMAIL CONFIG   // EMAIL CONFIG   // EMAIL CONFIG
@@ -31,8 +30,6 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
         <h1 className={styles.title}>
         Capturing <strong>MOMENTS </strong> <br />  that last a <br /><span> LIFETIME. </span> 
         </h1>
-        <Gmail customText={"Let's Connect"}/>
-        <br />
         <p>"Transforming your special moments into timeless memories."</p>
         <p> "Your expert event photographer, dedicated to preserving your precious moments."</p>
         <div className={styles.scroll}><p >Scroll</p></div>
@@ -86,6 +83,7 @@ const Home = ({isDesktop,setShowNavbar,isMediumScreen, isSmallScreen, showNavbar
          <h1>Thank you for your support :)</h1>
         </div>
       </div>
+      <Cta/>
       <Footer/>
     </div>
   )

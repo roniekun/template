@@ -1,15 +1,25 @@
 .btn{
-    padding-block: 1em;
-    padding-inline: 1em;
+    padding-block: 25px;
+    padding-inline: 1.5em;
     cursor: pointer;
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 50px;
     text-transform: uppercase;
     border: gray 1px solid;
+    font-family: sans-serif;
+    color: white;
+    background-color: transparent;
   }
   
   .btn:hover{
-    background-color: black;
     color: whitesmoke;
     transition: .3s;
     }
+
+  @media (max-width: 1024px) {
+
+    .btn{
+      font-size: 14px;
+    }
+    
+  }
